@@ -86,11 +86,9 @@ public class MainActivity extends AppCompatActivity {
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
         @Override
         public Fragment getItem(int position) {
             switch (position) {
@@ -106,13 +104,11 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
-
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 3 total tabs.
             return 3;
         }
-
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {

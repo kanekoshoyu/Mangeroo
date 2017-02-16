@@ -7,14 +7,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mangeroo.mangeroo.MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <Switch
         android:text="Free for Lunch"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/switch1"
-        android:layout_weight="1" />
+        android:id="@+id/switch1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Available Friends Here"/>
 
 
 </LinearLayout>

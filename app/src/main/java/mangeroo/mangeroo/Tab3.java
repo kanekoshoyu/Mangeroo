@@ -15,30 +15,31 @@ import android.widget.ListView;
  */
 
 public class Tab3 extends Fragment{
-    ListView listView;
-    ArrayAdapter<String> adapter;
+
+
+    String[] android_version={
+            "Eclair",
+            "Donut",
+            "Eclair",
+            "Froyo",
+            "Gingerbread",
+            "Honeycomb",
+            "Kitkat",
+            "Lollipop",
+            "Marshmallow",
+            "Nougat"};
+
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        //Inflate the View first to facilitate findViewById
         View rootView = inflater.inflate(R.layout.tab3, container, false);
-
-        String[] android_version={
-                "Cupcake",
-                "Donut",
-                "Eclair",
-                "Froyo",
-                "Gingerbread",
-                "Honeycomb",
-                "Kitkat",
-                "Lollipop",
-                "Marshmallow",
-                "Nougat"};
-        listView= (ListView) rootView.findViewById(R.id.list_view);
-
-
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
+        //creates the adapter for the ListView, and show the ListView
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, android_version);
+        listView.setAdapter(adapter);
         return rootView;
 
     }

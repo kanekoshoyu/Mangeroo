@@ -14,7 +14,9 @@ public class Tab2 extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //Inflate the View first to facilitate findViewById
         View rootView = inflater.inflate(R.layout.tab2, container, false);
+
         return rootView;
     }
 }
