@@ -13,11 +13,13 @@
         android:text="Free for Lunch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/switch1"/>
+        android:id="@+id/switchFree"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Available Friends Here"/>
+        android:text="Available Friends Here"
+        android:id="@+id/textViewList" />
 
 
 </LinearLayout>
